@@ -81,11 +81,18 @@
                 position: absolute;
                 top: -70px;
                 left: 50%;
-                transform: translateX(-50%);
-                zoom: 0.6;
+                transform: translateX(-50%) scale(0.9);
                 width: 1300px;
                 height: 1200px;
                 border: none;
+            }
+            
+            @supports (-webkit-touch-callout: none) {
+            /* Solo Safari (principalmente iOS y macOS) */
+
+            #miIframe {
+                zoom: 0.6;
+            }
             }
         }
     </style>
